@@ -1,0 +1,67 @@
+
+
+
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),    url(Images/matata.jpg);
+    width: 100vw;
+    height: 185vh;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-color:  rgb(236,157,15);   
+  
+}
+
+.live{
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+h1{
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    transform: translate(40%);
+    margin-top: 25%;
+    width: 50%;
+}
+.navbar{
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 20%;
+    background-color: black;
+    width: 38%;
+    padding: 1%;
+    border-radius: 3em;
+    font-size: 1.3em;
+
+}
+.navbarItems{
+    list-style: none;
+    display: flex;
+    gap: 3%;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#reservationsLink{
+    background-color: grey;
+    padding: 10%;
+    border-radius: 1em;
+}
+
+#whatssapIcon{
+position: fixed;
+font-size: 30px;
+margin-top: 800px;
+margin-left: 90%;
+background-color: black;
+border: white 1px solid;
+border-radius: 2em;
+padding: 1%;
+}

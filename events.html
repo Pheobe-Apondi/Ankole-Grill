@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+    <img src="Images/ankole_logo.svg" id="ankoleLogo">
+    <section class="events">
+        <div class="accra">
+            <p id="eventVenue">pavillion</p>
+            <h1>Accra</h1>
+            <p id="eventInfo">Pax:8 -10</p>
+            <p id="eventInfo">Perfect for:Corporate conferences | Private events</p>
+            <p>For more information:</p>
+            <p>0703 212 121</p>
+            <p id="phoneNo">0701 138 345</p>
+        </div>
+        <div class="nairobi">
+            <p id="eventVenue">pavillion</p>
+            <h1>Nairobi</h1>
+            <p id="eventInfo">Pax:100 -150</p>
+            <p id="eventInfo">Private bar| Spacious patio overlooking lush greenary</p>
+            <p>For more information:</p>
+            <p>0703 212 121</p>
+            <p id="phoneNo">0701 138 345</p>
+        </div>
+        <div class="zanzibar">
+            <p id="eventVenue">pavillion</p>
+            <h1>Zanzibar</h1>
+            <p id="eventInfo">Pax:20 -25</p>
+            <p id="eventInfo">Open light filled event space| Corporate | Private functions</p>
+            <p>For more information:</p>
+            <p>0703 212 121</p>
+            <p id="phoneNo">0701 138 345</p>
+        </div>
+    </section>
+    <nav class="navbar">
+        <ul class="navbarItems">
+            <li><a href="#"><i class="fa-solid fa-clock" style="color: #fafcff;"></i></a></li>
+            <li><a href="index.html">Home</a>
+            <li><a href="menu.html">Menu</a> </li> 
+            <li><a href="reviews.html">Reviews</a></li> 
+            <li><a href="events.html">Events</a></li>
+            <li> <a href="live.html">Live</a></li>    
+            <li><a href="contacts.html">Contacts</a></li></li>
+            <li><a href="reservations.html" id="reservationsLink">Reservations</a></li>
+           </ul>
+       </nav>
+    <i class="fa-brands fa-whatsapp" style="color: #eaeaeb;" id="whatssapIcon"></i>
+    <div class="socialIcons">
+        <i class="fa-brands fa-instagram" style="color: #f4f5f6;" id="instaIcon"></i>
+        <i class="fa-brands fa-facebook-f" style="color: #ebedef;" id="facebookIcon"></i>
+        </div>
+         
+      <script>
+        const naVBar = document.querySelector(".navbar")
+        const toggleButton = document.querySelector(".navbarToggle")
+        const navLinks = document.querySelector (".navbarItems")
+        toggleButton.addEventListener('click', () =>{
+            navLinks.classList.toggle ('show');
+        }
+    )
+      </script>
+
+</body>
+</html>

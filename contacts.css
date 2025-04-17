@@ -1,0 +1,378 @@
+.contact{
+    background-image: linear-gradient(rgba(20, 14, 14, 0.5), rgba(0, 0, 0, 0.5)),  url(https://manlypacific.com.au/wp-content/uploads/sites/44/2025/03/Cibaria_LuchettiKrelle_StevenWoodburn_7-2200x1200.jpg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: hidden;
+}
+
+#ankoleLogo{
+     position: absolute;
+     width: 10%;
+     margin-left: 45%;
+     margin-top: 1%;
+
+}
+
+.contactInfo{
+    display: flex;
+    margin-top: 15%;
+    justify-content: center;
+    margin-left: 20%;
+    gap: 5%;
+    font-size: 1.2em;
+}
+.kitisuruContact{
+border: solid 2px white;
+width: 40vw;
+height: 80%;
+padding: 2%;
+}
+.kilimaniContact{
+     border: solid 2px white;
+     width: 40vw;
+     height: 80%;
+     padding: 2%;
+}
+
+.kitisuruContact a, .kilimaniContact a{
+    text-decoration: none;
+    color: orange;
+}
+
+
+
+.navbar{
+    position: absolute;
+    margin-top: 43%;
+    margin-left: 30%;
+    background-color: black;
+    width: 38vw;
+    padding: 1%;
+    border-radius: 3em;
+    font-size: 1.3em;
+
+}
+.navbarItems{
+    list-style: none;
+    display: flex;
+    gap: 3%;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#reservationsLink{
+    background-color: grey;
+    padding: 10%;
+    border-radius: 1em;
+}
+
+#whatssapIcon{
+position: absolute;
+font-size: 30px;
+margin-top: 800px;
+margin-left: 90%;
+background-color: black;
+border: white 1px solid;
+border-radius: 2em;
+padding: 1%;
+}
+
+.socialIcons{
+position:absolute;
+margin-left: 95%;
+display: flex;
+gap:50%;
+margin-bottom: 15%;
+}
+
+#instaIcon{
+    font-size: 20px;
+    
+
+}
+#facebookIcon{
+    font-size: 20px;
+   
+
+}
+
+@media only screen and (max-width:1200px) and (min-width: 801px){
+
+
+
+
+    .contactInfo{
+        font-size: 1.7em;
+    }
+.navbar{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    left: 2%;
+    top: 80%;
+    background-color: black;
+    width: 80vw;
+    padding: 1%;
+    border-radius: 3em;
+    font-size: 1.3em;
+
+}
+.navbarItems{
+    list-style: none;
+    display: flex;
+    gap: 3%;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#reservationsLink{
+    background-color: grey;
+    padding: 10%;
+    border-radius: 1em;
+}
+
+#whatssapIcon{
+position: absolute;
+font-size: 30px;
+margin-top: 700px;
+margin-left: 90%;
+background-color: black;
+border: white 1px solid;
+border-radius: 2em;
+padding: 1%;
+}
+
+.socialIcons{
+position:absolute;
+margin-left: 90%;
+display: flex;
+gap:50%;
+margin-bottom: 10%;
+}
+
+
+}
+
+@media only screen and (max-width:800px) and (min-width: 501px){
+
+    .kitisuruContact{
+        width: 45vw;
+        }
+        .kilimaniContact{
+             width: 45vw;
+        }
+
+        .contactInfo{
+            margin-left: 0%;
+            gap: 2%;
+        }
+        
+
+.navbar{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    left: 2%;
+    top: 85%;
+    background-color: black;
+    width: 90vw;
+    padding: 1%;
+    border-radius: 3em;
+    font-size: 1.3em;
+
+}
+.navbarItems{
+    list-style: none;
+    display: flex;
+    gap: 3%;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#reservationsLink{
+    background-color: grey;
+    padding: 10%;
+    border-radius: 1em;
+}
+
+#whatssapIcon{
+position: absolute;
+font-size: 30px;
+margin-top: 600px;
+margin-left: 90%;
+background-color: black;
+border: white 1px solid;
+border-radius: 2em;
+padding: 1%;
+}
+
+.socialIcons{
+position:absolute;
+margin-left: 90%;
+display: flex;
+gap:50%;
+margin-bottom: 10%;
+}
+
+#live, #contacts, #reviews, #events{
+    display: none;
+}
+
+}
+
+@media only screen and (max-width:500px) and (min-width: 0px){
+    .contact{
+        background-image: linear-gradient(rgba(20, 14, 14, 0.5), rgba(0, 0, 0, 0.5)),  url(https://manlypacific.com.au/wp-content/uploads/sites/44/2025/03/Cibaria_LuchettiKrelle_StevenWoodburn_7-2200x1200.jpg);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background-repeat: no-repeat;
+        color: white;
+        overflow: hidden;
+    }
+    
+    #ankoleLogo{
+         position: absolute;
+         width: 10%;
+         margin-left: 45%;
+         margin-top: 1%;
+    
+    }
+    
+    .contactInfo{
+        display: block;
+        font-size: 1em;
+    }
+    .kitisuruContact{
+    border: solid 2px white;
+    width: 70vw;
+    height: 80%;
+    padding: 2%;
+    }
+    .kilimaniContact{
+         border: solid 2px white;
+         width: 70vw;
+         height: 80%;
+         padding: 2%;
+         .contact{
+            background-image: linear-gradient(rgba(20, 14, 14, 0.5), rgba(0, 0, 0, 0.5)),  url(https://manlypacific.com.au/wp-content/uploads/sites/44/2025/03/Cibaria_LuchettiKrelle_StevenWoodburn_7-2200x1200.jpg);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            background-repeat: no-repeat;
+            color: white;
+            overflow: hidden;
+        }
+        
+        #ankoleLogo{
+             position: absolute;
+             width: 10%;
+             margin-left: 45%;
+             margin-top: 1%;
+        
+        }
+        
+        .contactInfo{
+            display: flex;
+            margin-top: 15%;
+            justify-content: center;
+            margin-left: 20%;
+            gap: 5%;
+            font-size: 1.2em;
+        }
+        .kitisuruContact{
+        border: solid 2px white;
+        width: 40vw;
+        height: 80%;
+        padding: 2%;
+        }
+        .kilimaniContact{
+             border: solid 2px white;
+             width: 40vw;
+             height: 80%;
+             padding: 2%;
+        }
+        
+        .kitisuruContact a, .kilimaniContact a{
+            text-decoration: none;
+            color: orange;
+        }
+        
+        
+    }
+
+
+
+.navbar{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    left: 2%;
+    top: 90%;
+    background-color: black;
+    width: 90vw;
+    padding: 1%;
+    border-radius: 3em;
+    font-size: 1.3em;
+
+}
+.navbarItems{
+    list-style: none;
+    display: flex;
+    gap: 3%;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#reservationsLink{
+    background-color:black;
+    padding: 0%;
+    border-radius: 1em;
+}
+
+#whatssapIcon{
+position: absolute;
+font-size: 30px;
+margin-top: 750px;
+margin-left: 90%;
+background-color: black;
+border: white 1px solid;
+border-radius: 2em;
+padding: 1%;
+}
+
+.socialIcons{
+position:absolute;
+margin-left: 70%;
+display: flex;
+gap:50%;
+margin-bottom: 10%;
+}
+
+#live, #contacts, #reviews, #events{
+    display: none;
+}
+  
+    
+    
+
+}

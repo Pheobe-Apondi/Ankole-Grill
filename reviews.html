@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reviews.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Reviews</title>
+</head>
+<body>
+
+
+<div class="review-container">
+    <div class="review" id="review1">
+          <img src="Images/ankole_logo.svg" id="ankoleLogo">
+          <h1>Reviews</h1>
+          <i class="fa-solid fa-quote-left" style="color: #e02c1f;" id="leftQuote"></i>
+           <p>This place is run by educated, innovative &creative people! 
+            The architectural layout, seating, ambience, lighting,cutlery: servings,
+             design; has been impeccably well thought out! Even thewashrooms were excellent!
+             The food was AWESOME! This is surprising consideringthe fact we were there on a Saturday night
+              & they almost had no space!
+            We were extremely well serviced too!Rare to find such finesse in Kenya! You must go visitthem!</p>
+            <i class="fa-solid fa-quote-right" style="color: #e53b10;" id="rightQuote"></i>
+            <h3>irfan virji</h3>
+            <h3>KITISURU</h3>
+    </div>
+    <div class="review" id="review2">
+        <img src="Images/ankole_logo.svg"  id="ankoleLogo">
+        <h1>Reviews</h1>
+        <i class="fa-solid fa-quote-left" style="color: #e02c1f;" id="leftQuote"></i>
+         <p>Such a fantastic restaurant, I plan on being a regular here. 
+            The food is amazing the atmosphere is so nice and the service is exceptional.
+             I pray you are able to visit them at least once so you can understand what I'm saying. 10/10.
+            Recommended dishes: Steak must go visit them!</p>
+          <i class="fa-solid fa-quote-right" style="color: #e53b10;" id="rightQuote"></i>
+          <h3>Paul Kamau</h3>
+          <h3>KITISURU</h3>
+    </div>
+    <div class="review" id="review3">
+        <img src="Images/ankole_logo.svg"  id="ankoleLogo">
+        <h1>Reviews</h1>
+        <i class="fa-solid fa-quote-left" style="color: #e02c1f;" id="leftQuote"></i>
+         <p>Best place to eat out. If you want to have a nice romantic date this place is perfect.
+             The food is fantastic only be careful cause the portions are bigger than you would expect.</p>
+          <i class="fa-solid fa-quote-right" style="color: #e53b10;" id="rightQuote"></i>
+          <h3>Vladimiro Stivali</h3>
+          <h3>KITISURU</h3>
+
+    </div>
+  
+    <div class="controls">
+        <button onclick="prevReview()"><i class="fa-solid fa-less-than" style="color: #66686b;" id="clickBefore"></i></button>
+      <button onclick="nextReview()"><i class="fa-solid fa-greater-than" style="color: #828487;" id="clickNext"></i></button>
+      
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <button class="navbarToggle">☰ </button>
+   
+    <ul class="navbarItems">
+    
+        <li><a href="#"><i class="fa-solid fa-clock" style="color: #fafcff;"></i></a></li>
+        <li><a href="index.html">Home</a>
+        <li><a href="menu.html">Menu</a> </li> 
+        <li><a href="reviews.html">Reviews</a></li> 
+        <li><a href="events.html">Events</a></li>
+        <li> <a href="live.html">Live</a></li>    
+        <li><a href="contacts.html">Contacts</a></li></li>
+        <li><a href="reservations.html" id="reservationsLink">Reservations</a></li>
+       </ul>
+   </nav>
+
+<i class="fa-brands fa-whatsapp" style="color: #eaeaeb;" id="whatssapIcon"></i>
+<div class="socialIcons">
+    <i class="fa-brands fa-instagram" style="color: #f4f5f6;" id="instaIcon"></i>
+    <i class="fa-brands fa-facebook-f" style="color: #ebedef;" id="facebookIcon"></i>
+    </div>
+
+
+
+  
+  <script>
+    const reviews = document.querySelectorAll(".review");
+    let current = 0;
+  
+    function showReview(index) {
+      reviews.forEach((rev, i) => {
+        rev.classList.remove("active");
+        if (i === index) {
+          rev.classList.add("active");
+        }
+      });
+    }
+  
+    function nextReview() {
+      current = (current + 1) % reviews.length;
+      showReview(current);
+    }
+  
+    function prevReview() {
+      current = (current - 1 + reviews.length) % reviews.length;
+      showReview(current);
+    }
+
+    showReview(current);
+  </script>
+  <script>
+    const naVBar = document.querySelector(".navbar")
+    const toggleButton = document.querySelector(".navbarToggle")
+    const navLinks = document.querySelector (".navbarItems")
+    toggleButton.addEventListener('click', () =>{
+        navLinks.classList.toggle ('show');
+    }
+)
+  </script>
+  
+  
+  
+
+  
+  
+</body>
+</html>

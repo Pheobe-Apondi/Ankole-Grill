@@ -1,0 +1,498 @@
+body{
+  overflow-x: hidden;
+  background-color: black;
+}
+.reservations{
+    display: flex;
+    margin: -10px;
+}
+
+
+.reservationsTitle{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  width: 60vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  text-align: center;
+  
+
+}
+
+
+#ankoleLogo{
+  margin-top: 10rem;
+}
+
+
+p{
+    color: white;
+    font-size: 3em;
+}
+h1{
+    color: red;
+    font-size: 5em;
+}
+
+.reservationsForm{
+    background-color: rgb(10, 10, 10);
+}
+
+form{
+    width: 40vw;
+    height: 80vh;
+    background-color: black;
+    margin: 3em;
+    border-radius: 2em;
+    padding: 2em;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(250, 246, 246, 0.2), 0 6px 20px 0 rgba(243, 240, 240, 0.19);
+}
+
+#input{
+   width: 100%;
+   height: 8%;
+   padding: em;
+   background-color:rgb(242,213,165);
+   color: black;
+
+}
+
+
+#submit{
+  width: 100%;
+  background-color:pink;
+  border-radius: 2em;
+  border: none;
+  padding: 1em;
+  margin-top: 3em;
+  color: black;
+
+}
+
+label{
+ font-size: 1.5em;
+}
+
+
+.navbar{
+  position: absolute;
+  margin-top: -6%;
+  margin-left: 5%;
+  background-color: black;
+  width: 40vw;
+  padding: 1%;
+  border-radius: 3em;
+  font-size: 1.3em;
+  box-shadow: 0 4px 8px 0 rgba(250, 246, 246, 0.2), 0 6px 20px 0 rgba(243, 240, 240, 0.19);
+
+}
+.navbarItems{
+  list-style: none;
+  display: flex;
+  gap: 3%;
+
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+}
+
+#reservationsLink{
+  background-color: grey;
+  padding: 10%;
+  border-radius: 1em;
+  text-align: center;
+}
+
+#whatssapIcon{
+  position: absolute;
+  font-size: 30px;
+  margin-top: -70px;
+  margin-left: 90%;
+  background-color: black;
+  border: white 1px solid;
+  border-radius: 2em;
+  padding: 1%;
+  }
+
+.socialIcons{
+position:absolute;
+margin-left: 95%;
+display: flex;
+gap:50%;
+margin-top: -48%;
+}
+
+#instaIcon{
+  font-size: 20px;
+  
+
+}
+#facebookIcon{
+  font-size: 20px;
+ 
+
+}
+
+.navbarToggle{
+  display: none;
+}
+
+@media only screen and (max-width:500px) and (min-width:0px){
+    
+.reservations{
+  display: block;
+  margin: -10px;
+}
+
+
+.reservationsTitle{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  width: 100vw;
+  height: 60vh;
+  background-repeat: no-repeat;
+  text-align: center;
+  
+
+}
+
+
+#ankoleLogo{
+  margin-top: 2rem;
+  width: 30%;
+}
+
+
+p{
+    color: white;
+    font-size: 3em;
+}
+h1{
+    color: red;
+    font-size: 3.5em;
+}
+
+.reservationsForm{
+    background-color: rgb(10, 10, 10);
+}
+
+form{
+    width: 70vw;
+    height: 100vh;
+    background-color: black;
+    margin: 1em;
+    border-radius: 2em;
+    padding: 2em;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(250, 246, 246, 0.2), 0 6px 20px 0 rgba(243, 240, 240, 0.19);
+}
+
+
+.navbar{
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 10%;
+  background-color: black;
+  width: 40vw;
+  padding: 1%;
+  border-radius: 1em;
+  font-size: 1em;
+  box-shadow: 0 4px 8px 0 rgba(250, 246, 246, 0.2), 0 6px 20px 0 rgba(243, 240, 240, 0.19);
+
+}
+
+.navbarToggle{
+display: block;
+}
+
+.navbarItems{
+display: none;
+list-style: none;
+gap: 3%;
+
+}
+
+.navbarItems.show{
+
+display: block;
+}
+
+
+#reservationsLink{
+background-color: black;
+padding: 1%;
+
+}
+
+
+
+#whatssapIcon{
+  position: absolute;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 60%;
+  background-color: black;
+  border: white 1px solid;
+  border-radius: 2em;
+  padding: 1%;
+  }
+
+.socialIcons{
+position:fixed;
+margin-left: 75%;
+display: flex;
+gap:50%;
+margin-top: 0%;
+margin-top: 35px;
+}
+
+
+
+
+
+
+
+       
+
+}
+
+@media only screen and (max-width:800px) and (min-width:501px){
+
+    
+.reservations{
+  display: block;
+  margin: 0px;
+}
+
+
+.reservationsTitle{
+
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+width: 100vw;
+height: 50vh;
+background-repeat: no-repeat;
+text-align: center;
+
+
+}
+
+
+#ankoleLogo{
+margin-top: 1rem;
+width: 10%;
+}
+
+
+p{
+  color: white;
+  font-size: 3em;
+}
+h1{
+  color: red;
+  font-size: 3em;
+}
+
+.reservationsForm{
+  background-color: rgb(10, 10, 10);
+  margin: -1em;
+}
+
+form{
+  width: 80vw;
+  height: 90vh;
+  background-color: black;
+   margin: 1em;
+  border-radius: 2em;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(250, 246, 246, 0.2), 0 6px 20px 0 rgba(243, 240, 240, 0.19);
+}
+
+#input{
+ width: 100%;
+ height: 6%;
+ padding: em;
+ background-color:rgb(242,213,165);
+ color: black;
+
+}
+
+
+#submit{
+width: 100%;
+background-color:pink;
+border-radius: 2em;
+border: none;
+padding: 1em;
+margin-top: 3em;
+color: black;
+
+}
+
+label{
+font-size: 1.5em;
+}
+
+
+
+.navbar{
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 0%;
+  width: 92vw;
+  padding: 0%;
+  border-radius: 3em;
+  font-size: 1em;
+
+}
+
+
+
+
+#reservationsLink{
+  background-color: black;
+  padding: 0%;
+  border-radius: 1em;
+  text-align: center;
+}
+
+#whatssapIcon{
+  position: absolute;
+  font-size: 30px;
+  margin-top: -1040px;
+  margin-left: 5%;
+  background-color: black;
+  border: white 1px solid;
+  border-radius: 2em;
+  padding: 1%;
+  }
+
+.socialIcons{
+position:absolute;
+margin-left: 80%;
+display: flex;
+gap:50%;
+margin-top: -190%;
+}
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (max-width:1200px) and (min-width:801px){
+
+   
+.reservations{
+  display: flex;
+  margin: -10px;
+}
+
+
+.reservationsTitle{
+
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+width: 45vw;
+height: 100vh;
+background-repeat: no-repeat;
+text-align: center;
+
+
+}
+
+
+#ankoleLogo{
+margin-top: 2rem;
+font-size: 10%;
+}
+
+
+p{
+  color: white;
+  font-size: 2em;
+}
+h1{
+  color: red;
+  font-size: 3em;
+}
+
+.reservationsForm{
+  background-color: rgb(10, 10, 10);
+}
+
+form{
+  width: 40vw;
+  height: 80vh;
+  background-color: black;
+  margin: 1em;
+  border-radius: 2em;
+  padding: 2em;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(250, 246, 246, 0.2), 0 6px 20px 0 rgba(243, 240, 240, 0.19);
+}
+
+
+
+
+#submit{
+  width: 100%;
+  background-color:pink;
+  border-radius: 2em;
+  border: none;
+  padding: 1em;
+  margin-top: 3em;
+  color: black;
+  
+  }
+  
+  label{
+  font-size: 1.5em;
+  }  
+
+
+.navbar{
+  position: absolute;
+  margin-top: -8%;
+  margin-left: 10%;
+  background-color: black;
+  width: 80vw;
+  padding: 1%;
+  border-radius: 3em;
+  font-size: 1.3em;
+  box-shadow: 0 4px 8px 0 rgba(250, 246, 246, 0.2), 0 6px 20px 0 rgba(243, 240, 240, 0.19);
+
+}
+.navbarItems{
+  list-style: none;
+  display: flex;
+  gap: 3%;
+
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+}
+
+#reservationsLink{
+  background-color: grey;
+  padding: 10%;
+  border-radius: 1em;
+  text-align: center;
+}
+
+#whatssapIcon{
+   display:none;
+  }
+
+.socialIcons{
+display: none;
+}
+
+}

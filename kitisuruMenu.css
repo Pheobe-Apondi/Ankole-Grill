@@ -1,0 +1,268 @@
+body{
+    overflow: hidden;
+    background-color: black;
+}
+
+.menu{
+    display: flex;
+    margin: -3%;
+    
+
+    h1, h2{
+        color: red;
+        
+    }
+    p{
+        color: white;
+    }
+}
+.menuTitle{
+    background-image: url(Images/menuImage.jpg);
+    width: 50vw;
+    height: 100vh;
+}
+
+#ankoleLogo{
+    width: 20%;
+    margin-top: 30%;
+    margin-left: 40%;
+}
+
+.navBar{
+    display: flex;
+    gap: 2em;
+
+  
+}
+
+.navBar a{
+    color: grey;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.menuHeading{
+    font-size: 3em;
+    text-align: center;
+}
+.navBar a:hover{
+    color: rgb(218, 154, 35);
+}
+
+.menuList{
+    background-color: black;
+    width: 40%;
+    padding: 5%;
+    height: 82vh;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.item{
+    display: flex;
+    gap: 60%;
+    justify-content: space-between;
+}
+
+#breakfastTitle{
+    color: red;
+}
+
+.navbar{
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 3%;
+    background-color: black;
+    width: 33%;
+    padding: 1%;
+    border-radius: 3em;
+    font-size: 1.2em;
+   
+
+}
+.navbarItems{
+    list-style: none;
+    display: flex;
+    gap: 2%;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#reservationsLink{
+    background-color: grey;
+    padding: 10%;
+    border-radius: 1em;
+}
+
+#whatssapIcon{
+position: absolute;
+font-size: 30px;
+margin-top: -100px;
+margin-left: 90%;
+background-color: black;
+border: white 1px solid;
+border-radius: 2em;
+padding: 1%;
+}
+
+@media only  screen and (max-width:500px) and (min-width:0px) {
+   body{
+ height: fit-content;
+   }
+    
+    .menu{
+        display: block;
+       
+    }
+
+    .menuTitle{
+        background-image: url(Images/menuImage.jpg);
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .menuHeading{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+
+.navBar{
+    display: flex;
+    gap: 10%;
+
+  
+}
+
+.navBar a{
+  
+    font-size: 1.5em;
+}
+
+.menuList{
+    width: 100vw;
+    height: 100vh;
+}
+
+.menuList{
+    background-color: black;
+    width: 70vw;
+    height: 100vh;
+    padding: 5%;
+    overflow-y: scroll;
+}
+
+
+.item{
+    gap: 20%;
+}
+
+.navbar{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 0%;
+    background-color: orange;
+    width: 90%;
+    padding: 1%;
+    border-radius: 1em;
+    font-size: 1em;
+   
+
+}
+
+.navbarItems{
+    display: block;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    background-color: black;
+}
+
+
+#reservationsLink{
+    background-color: orange;
+    padding: 0%;
+    border-radius: 1em;
+}
+
+#whatssapIcon{
+    display: none;
+    }
+
+
+
+    
+}
+
+@media only  screen and (max-width:750px) and (min-width:501px){
+  
+.navBar a{
+  
+    font-size: 1.2em;
+}
+ 
+   
+    .menuList{
+        width: 40%;
+        padding: 5%;
+        height: 80vh;
+    }
+    
+    .item{
+        gap: 15%;
+    }
+    
+    #breakfastTitle{
+        color: red;
+    }
+    
+    .navbar{
+        margin-top: -5%;
+        margin-left: 1%;
+        width: 80%;
+        font-size: 1em;
+       
+    
+    }
+}
+
+@media only  screen and (max-width:1200px) and (min-width:751px){
+ 
+.menuList{
+    width: 40%;
+    padding: 5%;
+    height: 80vh;
+}
+
+.item{
+    gap: 20%;
+}
+
+#breakfastTitle{
+    color: red;
+}
+
+.navbar{
+    margin-top: -5%;
+    margin-left: 1%;
+    width: 50%;
+    font-size: 1em;
+   
+
+}
+
+
+
+}
+
