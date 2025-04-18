@@ -53,392 +53,371 @@ a{
     text-decoration: none;
 }
 
-.navbar{
-    position: absolute;
-     margin-top: -1100px; 
-     position: fixed;  
-    margin-left: -800px;
+
+#whatssapIcon{
+    position: fixed;
+    font-size: 30px;
+    top: 85%;
+    left: 93%;
     background-color: black;
-    width: 38%;
+    border: white 1px solid;
+    border-radius: 2em;
     padding: 1%;
+    }
+  
+ 
+.socialIcons{
+    position:absolute;
+    left: 93%;
+    bottom: 95%;
+    display: flex;
+    gap:50%;
+  
+    }
+  
+
+
+  #instaIcon{
+    font-size: 20px;
+    filter: brightness(60%);
+    
+  
+  }
+
+  .insta{
+    border: solid 1px white;
+    width: 100%;
+    padding: 20%;
+    border-radius: 3em;
+    filter: brightness(60%);
+  }
+  
+  .facebook{
+    border: solid 1px white;
+    width: 100%;
+    padding: 20%;
+    border-radius: 2em;
+    filter: brightness(60%);
+   justify-content: center;
+  }
+
+
+
+
+  .navbar{
+     position: fixed;
+     top: 82%;
+     left: 1%;
+     padding: 0.7%;
+    background-color: black;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 40%;
     border-radius: 3em;
     font-size: 1.3em;
-
-}
-.navbarItems{
+    box-shadow: 0 4px 8px 0 rgba(31, 30, 30, 0.2), 0 6px 20px 0 rgba(36, 35, 35, 0.19);
+  
+  }
+  .navbarItems{
     list-style: none;
     display: flex;
     gap: 3%;
-
-}
-
-.navbar a{
+  
+  }
+  
+  .navbar a{
     text-decoration: none;
     color: white;
-}
+  }
 
-#reservationsLink{
+  .popup{
+    display: none;
+    position: absolute;
+    bottom: 90px;
+    top: auto;
+    left: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+    font-size: 0.9em;
+  }
+  
+  .clockIcon:hover .popup{
+    display: block;
+  }
+
+  .hamburger{
+    position: relative;
+  }
+  .menuWrapper{
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+  }
+  .menuIcon{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+  }
+   .mobileMenu{
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: -20px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 250px;
+   }
+
+   .menuWrapper:hover .mobileMenu{
+    display: block;
+   }
+
+   .mobileMenu a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0px;
+
+   }
+
+   .mobileMenu hr{
+    border: 0;
+    border-top: 1px solid #555;
+    margin: 0;
+   }
+   #reservationsLink{
     background-color: grey;
-    padding: 10%;
+    padding: 5%;
     border-radius: 1em;
+    text-align: center;
+    width: 100%;       
+
+  }
+  
+  
+
+
+
+@media only screen and (max-width:750px) and (min-width:0px){
+    body{
+        display: block;
+    }
+
+    .liveEvents{
+        padding: 10%;
+        margin-left: 0%;
+        width: 45%;
+        padding-top: 1%;
+    }
+    
+
+    .liveDetails{
+        position: relative;
+        margin-top: 15%;
+        margin-left: 30%;
+
+    }
+    .eventInfo{
+        display: block;
+        gap: 5%;
+        margin-bottom: 10%;
+    }
+
+    #liveImage{
+        width: 80vw;
+    }
+
+    #eventName{
+        color: white;
+        font-size: 1.5em;
+        width: 200%;
+    
+    }
+    #date{
+        color: red;
+        font-size: 1.5em;
+    }
+
+    #liveText{
+        color: red;
+        font-size: 5em;
+    }
+    #liveTitle{
+       display: none;
+    }
+
+    #ankoleLogo{
+        width: 60%;
+  }
+
+
+#menu,#homeMenu, #live ,#contacts, #events, #reviews{
+    display: none;
+ }
+ .navbar{
+    position: fixed;
+     left: 3%;
+     width: 80%;
+     padding: 0% 1em;
+     top: 85%;
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+   .navbarItems{
+     list-style: none;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+   }
+  
+ #whatssapIcon{
+     position: fixed;
+     font-size: 30px;
+     top: 75%;
+     left: 80%;
+     
+     background-color: black;
+     border: white 1px solid;
+     border-radius: 2em;
+     padding: 2%;
+     }
+   
+  
+ .socialIcons{
+     position:absolute;
+     left: 88%;
+     bottom: 85%;
+     display: flex;
+     flex-direction: column;
+     gap:50%;
+   
+     }
+   .facebook{
+     margin-top: 35%;
+   }
+   #reservationslink{
+     padding-left: 0.2em;
+   }
+  
+   .clockIcon{
+     font-size: 130%;
+     padding-left: 1em;
+   }
+   .menuIcon{
+     font-weight: 150%;
+   }
+ 
+
+
+
 }
 
-#whatssapIcon{
-position: fixed;
-margin-top: -1100px; 
-margin-left: 800px;
-font-size: 30px;
-background-color: black;
-border: white 1px solid;
-border-radius: 2em;
-padding: 1%;
-}
+@media only screen and (max-width:999px) and (min-width:751px){
+    body{
+        display: block;
+    }
+
+    .liveEvents{
+        padding: 10%;
+        margin-left: 0%;
+        width: 45%;
+        padding-top: 1%;
+    }
+    
+
+    .liveDetails{
+        position: relative;
+        margin-top: 15%;
+        margin-left: 30%;
+
+    }
+    .eventInfo{
+        display: block;
+        gap: 5%;
+        margin-bottom: 10%;
+    }
+
+    #liveImage{
+        width: 60vw;
+    }
+
+    #eventName{
+        color: white;
+        font-size: 2.5em;
+        width: 200%;
+    
+    }
+    #date{
+        color: red;
+        font-size: 1.5em;
+    }
+
+    #liveText{
+        color: red;
+        font-size: 5em;
+    }
+    #liveTitle{
+       display: none;
+    }
+
+    #ankoleLogo{
+        width: 60%;
+  }
 
 
 .socialIcons{
     position:absolute;
-    margin-left: 90%;
+    left: 87%;
+    bottom: 95%;
     display: flex;
     gap:50%;
   
     }
 
-#instaIcon{
-    font-size: 20px;
+#whatssapIcon{
+    position: fixed;
+    font-size: 30px;
+    top: 85%;
+    left: 90%;
     
+    background-color: black;
+    border: white 1px solid;
+    border-radius: 2em;
+    padding: 2%;
+    }
 
-}
-#facebookIcon{
-    font-size: 20px;
+
+  .navbar{
+    position: fixed;
+     top: 90%;
+     left: 5%;
+     padding: 0.3%;
    
-
-}
-
-
-
-
-@media only screen and (max-width:500px) and (min-width:0px){
-    body{
-        display: block;
-    }
-
-    .liveEvents{
-        padding: 10%;
-        margin-left: 0%;
-        width: 45%;
-        padding-top: 1%;
-    }
-    
-
-    .liveDetails{
-        position: relative;
-        margin-top: 15%;
-        margin-left: 30%;
-
-    }
-    .eventInfo{
-        display: block;
-        gap: 5%;
-        margin-bottom: 10%;
-    }
-
-    #liveImage{
-        width: 80vw;
-    }
-
-    #eventName{
-        color: white;
-        font-size: 1.5em;
-        width: 200%;
-    
-    }
-    #date{
-        color: red;
-        font-size: 1.5em;
-    }
-
-    #liveText{
-        color: red;
-        font-size: 5em;
-    }
-    #liveTitle{
-       display: none;
-    }
-
-    #ankoleLogo{
-        width: 60%;
-  }
-
-  .socialIcons{
-    position:absolute;
-    margin-left: 60%;
-    margin-top: 40%;
-    display: flex;
-    gap:50%;
-    z-index: 1;
-    display: none;
+    width: 88%;
   
-    }
-    .navbar{
-        position: fixed;
-         margin-top: -1580px;  
-        margin-left: 0px;
-        background-color: black;
-        width: 80vw;
-        padding: 1%;
-        border-radius: 1em;
-        font-size: 1.3em;
-        margin-bottom: 10px;
-    
-
-
-
-
-    }
-
-    .navbarItems{
-        list-style: none;
-        display: flex;
-        gap: 3%;
-    
-    }
-    #reservationsLink{
-        background-color:black;
-        padding: 1%;
-        border-radius: 1em;
-    }
-    
-    #whatssapIcon{
-        position: fixed;
-        margin-top: -90px; 
-        margin-left: 0px;
-        font-size: 30px;
-        background-color: black;
-        border: white 1px solid;
-        border-radius: 2em;
-        padding: 1%;
-        }
-       
-       #live, #contacts, #reviews, #events, #menu{
-            display: none;
-        }  
-   
-    
-
-
-}
-
-@media only screen and (max-width:1200px) and (min-width:801px){
-
-    body{
-        display: block;
-        overflow-x: hidden;
-    }
-
-    .liveEvents{
-        padding: 10%;
-        margin-left: 0%;
-        width: 45%;
-        padding-top: 1%;
-    }
-    
-
-    .liveDetails{
-        position: relative;
-        margin-top: 15%;
-        margin-left: 30%;
-
-    }
-    .eventInfo{
-        display: flex;
-        gap: 5%;
-        margin-bottom: 10%;
-    }
-
-    #liveImage{
-        width: 40vw;
-    }
-
-    #eventName{
-        color: white;
-        font-size: 2em;
-        width: 200%;
-    
-    }
-    #date{
-        color: red;
-        font-size: 1.5em;
-    }
-
-    #liveText{
-        color: red;
-        font-size: 5em;
-    }
-    #liveTitle{
-       display: none;
-    }
-
-    #ankoleLogo{
-        width: 60%;
+  
   }
 
 
 
-  #ankoleLogo{
-    width: 40%;
-}
 
 
-  .socialIcons{
-    display: none;
-  
-    }
-    .navbar{
-        position: relative;
-         margin-top: 80px;  
-        margin-left: 0px;
-        background-color: black;
-        width: 50vw;
-        padding: 1%;
-        border-radius: 1em;
-        font-size: 2em;
-        margin-bottom: 0px;
-    
-
-
-
-
-    }
-
-    .navbarItems{
-        list-style: none;
-        display: flex;
-        gap: 3%;
-    
-    }
-    #reservationsLink{
-        background-color:black;
-        padding: 1%;
-        border-radius: 1em;
-    }
-    
-    #whatssapIcon{
-      display: none;
-        }
-       
-       #live, #contacts, #reviews, #events, #menu{
-            display: none;
-        }  
-
-
-   
 
  
 }
 
 
-@media only screen and (max-width:800px) and (min-width:501px){
-    body{
-        display: block;
-        overflow-x: hidden;
-    }
 
-    .liveEvents{
-        padding: 10%;
-        margin-left: 0%;
-        width: 45%;
-        padding-top: 1%;
-    }
-    
-
-    .liveDetails{
-        position: relative;
-        margin-top: 15%;
-        margin-left: 30%;
-
-    }
-    .eventInfo{
-        display: flex;
-        gap: 5%;
-        margin-bottom: 10%;
-    }
-
-    #liveImage{
-        width: 40vw;
-    }
-
-    #eventName{
-        color: white;
-        font-size: 1.3em;
-        width: 200%;
-    
-    }
-    #date{
-        color: red;
-        font-size: 1.5em;
-    }
-
-    #liveText{
-        color: red;
-        font-size: 5em;
-    }
-    #liveTitle{
-       display: none;
-    }
-
-    #ankoleLogo{
-        width: 60%;
-  }
-
-
-
-  #ankoleLogo{
-    width: 40%;
-}
-
-
-  .socialIcons{
-    display: none;
-  
-    }
-    .navbar{
-        position: relative;
-         margin-top: 80px;  
-        margin-left: 0px;
-        background-color: black;
-        width: 65vw;
-        padding: 1%;
-        border-radius: 1em;
-        font-size: 1.3em;
-        margin-bottom: 0px;
-    
-
-
-
-
-    }
-
-    .navbarItems{
-        list-style: none;
-        display: flex;
-        gap: 3%;
-    
-    }
-    #reservationsLink{
-        background-color:grey;
-        padding: 3%;
-        border-radius: 1em;
-        text-align: center;
-    }
-    
-    #whatssapIcon{
-      display: none;
-        }
-
-         
-       #live,  #reviews,#contacts, #events{
-        display: none;
-    }  
-      
-
-}
