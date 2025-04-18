@@ -224,6 +224,7 @@ flex-direction: column;
 
 .item{
     gap: 5vw;
+    font-size: 1.7em;
 }
 
 
@@ -235,6 +236,7 @@ flex-direction: column;
      position: fixed;
      width: 80%;
      padding: 0% 1em;
+     font-size: 1em;
  
  
  }
