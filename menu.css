@@ -1,11 +1,9 @@
 body{
     overflow: hidden;
-    background-color: black;
-}
+margin: 0;}
 
 .menu{
     display: flex;
-    margin-top: -10px;
   
 
     p{
@@ -35,9 +33,9 @@ body{
 
 #ankoleLogo{
     position: absolute;
-   margin-top: 8em;
-   margin-left: 51em;
-   width: 10%;
+    top: 10%;
+    left: 45%;
+ width: 10%;
 
 }
 
@@ -48,222 +46,393 @@ body{
 
 #tagline{
     color: red;
+    animation-name: slideFromTop;
 }
+
+
+
 
 #menuLink{
     text-decoration: none;
 }
 
-.navbar{
+ 
+#whatssapIcon{
     position: absolute;
-    margin-top: -8%;
-    margin-left: 28%;
+    font-size: 30px;
+    top: 85%;
+    left: 93%;
+    
     background-color: black;
-    width: 38%;
+    border: white 1px solid;
+    border-radius: 2em;
     padding: 1%;
+    }
+  
+ 
+.socialIcons{
+    position:absolute;
+    left: 93%;
+    bottom: 95%;
+    display: flex;
+    gap:50%;
+  
+    }
+  
+
+
+  #instaIcon{
+    font-size: 20px;
+    filter: brightness(60%);
+    
+  
+  }
+
+  .insta{
+    border: solid 1px white;
+    width: 100%;
+    padding: 20%;
+    border-radius: 3em;
+    filter: brightness(60%);
+  }
+  
+  .facebook{
+    border: solid 1px white;
+    width: 100%;
+    padding: 20%;
+    border-radius: 2em;
+    filter: brightness(60%);
+   justify-content: center;
+  }
+
+
+
+
+  .navbar{
+    position: absolute;
+     position: absolute;
+     top: 82%;
+     left: 25%;
+     padding: 0.7%;
+    background-color: black;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 40%;
     border-radius: 3em;
     font-size: 1.3em;
-
-}
-.navbarItems{
+    box-shadow: 0 4px 8px 0 rgba(31, 30, 30, 0.2), 0 6px 20px 0 rgba(36, 35, 35, 0.19);
+  
+  }
+  .navbarItems{
     list-style: none;
     display: flex;
     gap: 3%;
-
-}
-
-.navbar a{
+  
+  }
+  
+  .navbar a{
     text-decoration: none;
     color: white;
-}
+  }
 
-#reservationsLink{
-    background-color: grey;
-    padding: 10%;
-    border-radius: 1em;
-}
-
-#whatssapIcon{
-position: absolute;
-font-size: 30px;
-margin-top: -100px;
-margin-left: 90%;
-background-color: black;
-border: white 1px solid;
-border-radius: 2em;
-padding: 1%;
-}
-
-.socialIcons{
-position:absolute;
-margin-left: 90%;
-display: flex;
-gap:50%;
-margin-top: -45%;
-}
-
-#instaIcon{
-    font-size: 20px;
-    
-
-}
-#facebookIcon{
-    font-size: 20px;
-   
-
-}
-
-::-webkit-scrollbar {
+  .popup{
     display: none;
-}
-
-@media only  screen and (max-width:500px) and (min-width:0px){
-
-
-.menu{
-    display: block;
-    margin-top: -310px;
-
-}
-
-
-#ankoleLogo{
-    display: none; 
-
-}
-
-#ankoleLogo{
     position: absolute;
-   margin-top: 8em;
-   margin-left: 10em;
-   width: 10%;
+    bottom: 90px;
+    top: auto;
+    left: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+    font-size: 0.9em;
+  }
+  
+  .clockIcon:hover .popup{
+    display: block;
+  }
 
+  .hamburger{
+    position: relative;
+  }
+  .menuWrapper{
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+  }
+  .menuIcon{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+  }
+   .mobileMenu{
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: -20px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 250px;
+   }
+
+   .menuWrapper:hover .mobileMenu{
+    display: block;
+   }
+
+   .mobileMenu a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0px;
+
+   }
+
+   .mobileMenu hr{
+    border: 0;
+    border-top: 1px solid #555;
+    margin: 0;
+   }
+   #reservationsLink{
+    background-color: grey;
+    padding: 5%;
+    border-radius: 1em;
+    text-align: center;
+    width: 100%;       
+
+  }
+  
+  
+@media only  screen and (max-width:750px) and (min-width:0px){
+    body{
+        overflow: scroll;
+    }
+
+    .menu{
+     flex-direction: column;
+
+}
+
+
+#ankoleLogo{
+    width: 20%;
+    left: 40%;
+
+ 
+
+}
+
+
+.menuText{
+    margin-top: 8em;
+    font-size: 1.5em;
 }
 
 
 
 .kitisuruMenu{
     width: 100vw;
-    height: 40vh;
+    height: 70vh;
 }
 
 .kilimaniMenu{
     width: 100vw;
-    height: 60vh;
-    margin-top: -320px;
 }
 
 
-.navbar{
-    position: absolute;
-    margin-top: -60%;
-    margin-left: 10%;
-    background-color: orange;
-    width: 70%;
-    padding: 1%;
-    border-radius: 1em;
-    font-size: 1.3em;
+
+#menu,#homeMenu, #live ,#contacts, #events, #reviews{
+    display: none;
+ }
+ .navbar{
+    position: fixed;
+     left: 3%;
+     top: 65%;
+     width: 80%;
+     padding: 0% 1em;
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+   .navbarItems{
+     list-style: none;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+   }
+  
+ #whatssapIcon{
+     position: fixed;
+     font-size: 30px;
+     top: 53%;
+     left: 80%;
+     
+     background-color: black;
+     border: white 1px solid;
+     border-radius: 2em;
+     padding: 2%;
+     }
+   
+  
+ .socialIcons{
+     position:fixed;
+     left: 88%;
+     bottom: 85%;
+     display: flex;
+     flex-direction: column;
+     gap:50%;
+   
+     }
+   .facebook{
+     margin-top: 35%;
+   }
+   #reservationslink{
+     padding-left: 0.2em;
+   }
+  
+   .clockIcon{
+     font-size: 130%;
+     padding-left: 1em;
+   }
+   .menuIcon{
+     font-weight: 150%;
+   }
+
+
 
 }
-.navbarItems{
-    list-style: none;
-    display: block;
-    gap: 3%;
 
-}
 
-.navbar a{
-    text-decoration: none;
-    color: white;
-}
 
-#reservationsLink{
-    background-color: orange;
-    padding: 1%;
-    border-radius: 1em;
-}
-
-.navbar a:hover{
-    background-color: black;
-}
-
-.socialIcons{
-    margin-left: 80%;
-    margin-top: -204%;
+@media only  screen and (max-width:999px) and (min-width:751px){
+       
+    body{
+        overflow: scroll;
     }
 
+    .menu{
+     flex-direction: column;
+
+}
+
+
+#ankoleLogo{
+    width: 15%;
+    left: 42%;
+    position: fixed;
+
+ 
+
+}
+
+
+.menuText{
+    margin-top: 11em;
+    font-size: 1.5em;
+}
+
+
+
+.kitisuruMenu{
+    width: 100vw;
+    height: 70vh;
+}
+
+.kilimaniMenu{
+    width: 100vw;
+}
+
+
+
+ .navbar{
+    position: fixed;
+     left: 3%;
+     top: 65%;
+     width: 80%;
+     padding: 0% 1em;
+     font-size: 1em;
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+   .navbarItems{
+     list-style: none;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+   }
   
-    #whatssapIcon{
-    
-        margin-left: 85%;
+ #whatssapIcon{
+     position: fixed;
+     font-size: 30px;
+     padding: 2%;
+     top: 55%;
+     left: 85%;
      
-        }
-        
+     background-color: black;
+     border: white 1px solid;
+     border-radius: 2em;
+     }
+   
+  
+ .socialIcons{
+     position:fixed;
+     left: 88%;
+     bottom: 85%;
+     display: flex;
+     flex-direction: column;
+     gap:50%;
+   
+     }
+   .facebook{
+     margin-top: 35%;
+   }
+   #reservationslink{
+     padding-left: 0.2em;
+   }
+  
+   .clockIcon{
+     font-size: 130%;
+     padding-left: 1em;
+   }
+   .menuIcon{
+     font-weight: 150%;
+   }
 }
 
+@media only  screen and (max-width:1600px) and (min-width:1000px){
 
-@media only  screen and (max-width:750px) and (min-width:501px){
+   
+  .navbar{
+     top: 80%;
+     left: 30%;
+      font-size: 1em;
+    width: 40%;
+   
+  
+  }
+
+
     
-    
-.navbar{
-    margin-top: -20%;
-    margin-left: 3%;
-    width: 90%;
-    padding: 1%;
-    font-size: 1em;
-
-}
-
-#ankoleLogo{
-   display: none;
-}
-
-
-#whatssapIcon{
-margin-top: -70px;
-}
-
+ 
 .socialIcons{
-position:absolute;
-margin-left: 90%;
-display: flex;
-gap:50%;
-margin-top: -130%;
-}
-
-}
-
-
-@media only  screen and (max-width:1200px) and (min-width:751px){
-       
-.navbar{
-    margin-top: -20%;
-    margin-left: 3%;
-    width: 90%;
-    padding: 1%;
-    font-size: 1em;
-
-}
-
-
-#ankoleLogo{
-    position: absolute;
-   margin-top: 8em;
-   margin-left: 22em;
-   width: 10%;
-
-}
-
-#whatssapIcon{
-margin-top: -70px;
-}
-
-.socialIcons{
-position:absolute;
-margin-left: 90%;
-display: flex;
-gap:50%;
-margin-top: -130%;
-}
+    left: 89%;
+    bottom: 92%;
+   
+  
+    }
 
 }

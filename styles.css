@@ -1,72 +1,470 @@
-html,body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
+body{
+    margin: 0%;
 }
 
 
-.hero{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-}
 
 .logo{
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 20%;
-    height: auto;
+    top: 15%;
+    left: 40%;
+    width: 15%;
+    
+    z-index: 3;
 }
 
-.slide{
+.hero{
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -5;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.background{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 2.5rem;
+    object-fit: cover;
     opacity: 0;
-    animation: fade 50s infinite;   
-   }
-   .slide1{
-      background-image: url(Images/rich-places.jpg);
-      animation-delay:0s ;
-   }
-   .slide1{
-    background-image: url(Images/indoor-rich.jpg);
-    animation-delay: 10s ;
- }
- .slide1{
-    background-image: url(Images/chipps-meat.jpg);
-    animation-delay:20s ;
- }
-
- .slide1{
-    background-image: url(Images/red-food.jpg);
-    animation-delay:30s ;
- }
-
- .slide1{
-    background-image: url(Images/veggies.jpg);
-    animation-delay:40s ;
- }
-
-
-@keyframes fade{
-    0%{ opacity: 0; }
-    5%{opacity: 1;}
-    
-    20%{opacity: 1;}
-     
-    25%{opacity: 0;}
-    
-    100%{opacity: 0;}
-      
+    transition: opacity  2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+.background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
 }
 
+
+h1{
+    position: absolute;
+     left: 50%;
+     transform: translate(-50%);
+     bottom: 25%;
+    color: rgb(95, 93, 93);
+    font-size: 8em;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.showing{
+    opacity: 1;
+    z-index: -1;
+    transition: none;
+}
+
+
+ 
+#whatssapIcon{
+    position: absolute;
+    font-size: 30px;
+    top: 85%;
+    left: 93%;
+    
+    background-color: black;
+    border: white 1px solid;
+    border-radius: 2em;
+    padding: 1%;
+    }
+  
+ 
+.socialIcons{
+    position:absolute;
+    left: 93%;
+    bottom: 95%;
+    display: flex;
+    gap:50%;
+  
+    }
+  
+
+
+  #instaIcon{
+    font-size: 20px;
+    filter: brightness(60%);
+    
+  
+  }
+
+  .insta{
+    border: solid 1px white;
+    width: 100%;
+    padding: 20%;
+    border-radius: 3em;
+    filter: brightness(60%);
+  }
+  
+  .facebook{
+    border: solid 1px white;
+    width: 100%;
+    padding: 20%;
+    border-radius: 2em;
+    filter: brightness(60%);
+   justify-content: center;
+  }
+
+
+
+
+  .navbar{
+    position: absolute;
+     position: absolute;
+     top: 82%;
+     left: 25%;
+     padding: 0.7%;
+    background-color: black;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 40%;
+    border-radius: 3em;
+    font-size: 1.3em;
+    box-shadow: 0 4px 8px 0 rgba(31, 30, 30, 0.2), 0 6px 20px 0 rgba(36, 35, 35, 0.19);
+  
+  }
+  .navbarItems{
+    list-style: none;
+    display: flex;
+    gap: 3%;
+  
+  }
+  
+  .navbar a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .popup{
+    display: none;
+    position: absolute;
+    bottom: 90px;
+    top: auto;
+    left: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+    font-size: 0.9em;
+  }
+  
+  .clockIcon:hover .popup{
+    display: block;
+  }
+
+  .hamburger{
+    position: relative;
+  }
+  .menuWrapper{
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+  }
+  .menuIcon{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+  }
+   .mobileMenu{
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: -20px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 250px;
+   }
+
+   .menuWrapper:hover .mobileMenu{
+    display: block;
+   }
+
+   .mobileMenu a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0px;
+
+   }
+
+   .mobileMenu hr{
+    border: 0;
+    border-top: 1px solid #555;
+    margin: 0;
+   }
+   #reservationsLink{
+    background-color: grey;
+    padding: 5%;
+    border-radius: 1em;
+    text-align: center;
+    width: 100%;       
+
+  }
+  
+  
+ 
+  @media only screen and (max-width:750px) and (min-width:0px){
+   
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .hero{
+        height: 100vh;
+    }
+   
+.logo{
+    left: 30%;
+    width: 30vw;
+    position: fixed; 
+}
+
+h1{
+    font-size: 4em;
+    bottom: 30%;
+}
+#menu,#homeMenu, #live ,#contacts, #events, #reviews{
+   display: none;
+}
+.navbar{
+    left: 3%;
+    width: 80%;
+    padding: 0% 1em;
+
+
+}
+
+
+
+
+
+  .navbarItems{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+ 
+#whatssapIcon{
+    position: absolute;
+    font-size: 30px;
+    top: 73%;
+    left: 80%;
+    
+    background-color: black;
+    border: white 1px solid;
+    border-radius: 2em;
+    padding: 2%;
+    }
+  
+ 
+.socialIcons{
+    position:absolute;
+    left: 88%;
+    bottom: 85%;
+    display: flex;
+    flex-direction: column;
+    gap:50%;
+  
+    }
+  .facebook{
+    margin-top: 35%;
+  }
+  #reservationslink{
+    padding-left: 0.2em;
+  }
+ 
+  .clockIcon{
+    font-size: 130%;
+    padding-left: 1em;
+  }
+  .menuIcon{
+    font-weight: 150%;
+  }
+
+
+  }
+
+  @media only screen and (max-width:1350px) and (min-width:751px){
+
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .hero{
+        height: 100vh;
+    }
+   
+.logo{
+    left: 30%;
+    width: 30vw;
+    position: fixed; 
+}
+
+h1{
+    font-size: 4em;
+    bottom: 30%;
+}
+#menu,#homeMenu, #live ,#contacts, #events, #reviews{
+   display: none;
+}
+.navbar{
+    left: 30%;
+    width: 40%;
+    padding: 0% 1em;
+
+
+}
+
+
+
+
+
+  .navbarItems{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+ 
+#whatssapIcon{
+    position: absolute;
+    font-size: 30px;
+    top: 73%;
+    left: 80%;
+    
+    background-color: black;
+    border: white 1px solid;
+    border-radius: 2em;
+    padding: 2%;
+    }
+  
+ 
+.socialIcons{
+    position:absolute;
+    left: 88%;
+    bottom: 85%;
+    display: flex;
+    flex-direction: column;
+    gap:50%;
+  
+    }
+  .facebook{
+    margin-top: 35%;
+  }
+  #reservationslink{
+    padding-left: 0em;
+  }
+ 
+  .clockIcon{
+    font-size: 130%;
+    padding-left: 1em;
+  }
+  .menuIcon{
+    font-weight: 150%;
+  }
+
+
+
+
+  }
+
+  @media only screen and (max-width:1600px) and (min-width:1351px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .hero{
+        height: 100vh;
+    }
+
+    .navbar{
+        left: 3%;
+        width: 50%;
+        padding: 1%;
+        font-size: 1.2em;
+        justify-content: space-between;
+
+    }
+
+    .socialIcons{
+        left: 85%;
+        bottom: 90%;
+        
+      
+        }
+
+        #whatssapIcon{
+         
+            top: 87%;
+            left: 90%;
+            
+           
+            }
+
+
+h1{
+     bottom: 30%;
+    font-size: 5em;
+}
+
+  }
+
+  @media only screen and (max-width:900px) and (min-width:801px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .hero{
+        height: 100vh;
+    }
+
+    .navbar{
+        left: 3%;
+        width: 85%;
+        padding: 1%;
+        font-size: 1.2em;
+        justify-content: space-between;
+
+    }
+
+    .socialIcons{
+        left: 85%;
+        bottom: 90%;
+        
+      
+        }
+
+        #whatssapIcon{
+         
+            top: 87%;
+            left: 90%;
+            
+           
+            }
+
+
+h1{
+     bottom: 30%;
+    font-size: 5em;
+}
+
+  }
