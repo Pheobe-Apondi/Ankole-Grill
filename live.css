@@ -413,13 +413,53 @@ a{
   
   }
 
-
-
-
-
-
  
+
 }
+
+
+@media only screen and (max-width:1700px) and (min-width:1000px){
+
+
+
+
+  .navbar{
+    position: fixed;
+     top: 90%;
+     left: 5%;
+     padding: 0.3%;
+   
+    width: 75%;
+  
+  
+  }
+
+
+
+.socialIcons{
+    position:absolute;
+    left: 87%;
+    bottom: 95%;
+    display: flex;
+    gap:50%;
+  
+    }
+
+#whatssapIcon{
+    position: fixed;
+    font-size: 30px;
+    top: 85%;
+    left: 90%;
+    
+    background-color: black;
+    border: white 1px solid;
+    border-radius: 2em;
+    padding: 2%;
+    }
+
+
+}
+
 
 
 
