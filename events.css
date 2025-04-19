@@ -202,6 +202,10 @@ body{
     width: 100%;       
 
   }
+
+  .navbar a:hover{
+    color: orange;
+  }
   
   
 
@@ -340,7 +344,7 @@ flex-direction: column;
 #ankoleLogo{
 
     position: fixed;
-    top: 20%;
+    top: 30%;
     left: 45%;
     transform: translate(-50%, -50%);
     width: 40%;
@@ -406,6 +410,14 @@ flex-direction: column;
     }
 
   
+    #ankoleLogo{
+
+        position: absolute;
+        top: 50vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10%;
+    }
 }
 
 

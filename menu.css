@@ -181,6 +181,10 @@ margin: 0;}
     width: 250px;
    }
 
+
+   .navbar a:hover{
+    color: orange;
+  }
    .menuWrapper:hover .mobileMenu{
     display: block;
    }

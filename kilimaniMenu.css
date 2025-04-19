@@ -182,6 +182,10 @@ body{
     padding: 1%;
     }
   
+
+    .navbar a:hover{
+        color: orange;
+      }
  
 
 @media only  screen and (max-width:770px) and (min-width:0px) {

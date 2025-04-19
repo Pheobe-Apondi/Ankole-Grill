@@ -196,6 +196,10 @@ padding: 2%;
 
   }
 
+  .navbar a:hover{
+    color: orange;
+  }
+
  @media only screen and (max-width:750px) and (min-width:0px){
     .contact{
         width: 100vw;
