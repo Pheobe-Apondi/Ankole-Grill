@@ -211,9 +211,10 @@ h1{
  }
  .navbar{
      left: 10%;
-     width: 67%;
+     width: 70%;
+     
+     font-size: 0.9em;
      padding: 0% 1em;
-     font-size: 1em;
  
  
  

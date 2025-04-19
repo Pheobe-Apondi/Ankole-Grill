@@ -3,7 +3,6 @@ body{
     background-color: rgba(13, 12, 12, 0.5);
     background-blend-mode: darken;
     background-size: cover;
-    outline: 1px solid yellow;
     margin: 0;
 }
 
@@ -276,7 +275,7 @@ a{
      left: 3%;
      width: 80%;
      padding: 0% 1em;
-     top: 85%;
+     top: 94%;
      font-size: 1em;
 
  

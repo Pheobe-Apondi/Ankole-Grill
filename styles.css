@@ -239,7 +239,7 @@ h1{
 }
 
 h1{
-    font-size: 3.5em;
+    font-size: 3.3em;
     bottom: 30%;
 }
 #menu,#homeMenu, #live ,#contacts, #events, #reviews{
@@ -247,7 +247,8 @@ h1{
 }
 .navbar{
     left: 10%;
-    width: 64%;
+    width: 67%;
+    top: 90%;
     padding: 0% 1em;
     font-size: 0.9em;
 

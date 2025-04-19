@@ -254,9 +254,10 @@ flex-direction: column;
  .navbar{
     position: fixed;
      left: 3%;
-     width: 80%;
+     width: 85%;
      padding: 0% 1em;
      top: 85%;
+     font-size: 0.9em;
  
  
  }
@@ -378,7 +379,6 @@ flex-direction: column;
      top: 90%;
      left: 5%;
      padding: 0.3%;
-   
     width: 85%;
   
   

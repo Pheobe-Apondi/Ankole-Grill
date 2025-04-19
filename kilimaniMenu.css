@@ -182,10 +182,6 @@ body{
     padding: 1%;
     }
   
-
-    .navbar a:hover{
-        color: orange;
-      }
  
 
 @media only  screen and (max-width:770px) and (min-width:0px) {
@@ -238,7 +234,7 @@ flex-direction: column;
  .navbar{
      left: 3%;
      position: fixed;
-     width: 80%;
+     width: 82%;
      padding: 0% 1em;
      font-size: 1em;
  
@@ -269,8 +265,6 @@ flex-direction: column;
      }
 
 
-
-   
 
 
     
