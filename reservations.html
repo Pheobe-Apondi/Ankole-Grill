@@ -97,25 +97,6 @@
 
  
 
-       <script>
-         let imageBackgrounds = document.querySelectorAll (".background")
-         let imageIndex =0
-
-         function changeImages (){
-            imageBackgrounds[imageIndex].classList.remove("showing")
-            imageIndex ++;
-            if (imageIndex >= imageBackgrounds.length){
-               imageIndex =0
-            }
-
-            imageBackgrounds[imageIndex].classList.add("showing");
-         }
-
-         setInterval(changeImages, 10000);
-
-
-
-      </script>
 
     
 </body>

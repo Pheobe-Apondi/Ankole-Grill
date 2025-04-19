@@ -190,7 +190,9 @@ padding: 2%;
     padding: 5%;
     border-radius: 1em;
     text-align: center;
-    width: 100%;       
+    width: 100%;   
+    margin-top: -5%;      
+
 
   }
 
@@ -198,9 +200,9 @@ padding: 2%;
     .contact{
         width: 100vw;
         height: 140vh;
-flex-direction: column;  
- overflow: scroll;
- background-color: black;
+        flex-direction: column;  
+        overflow: scroll;
+        background-color: black;
     }
    
 
